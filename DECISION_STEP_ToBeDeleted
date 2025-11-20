@@ -1,0 +1,19 @@
+STEP, CONSIDERAZIONI E SCELTE:
+- SILVIA - 
+1) Data_quality_assessment:
+- "missing data with different format", stesso risultato che con isnull()
+- Consistency: regole per avere:
+                - Camere = somma Camere piano
+                - Piani totali = somma Piano piano
+                - Posti letto = somma Posti letto per piano
+                - Camere <= (minore/uguale) Posti letto tot
+                - (Descrizione,civico,codice via, ZD = Ubicazione) non controllata perchè troppi    modi diversi di scrivere in Ubicazione 
+
+
+2) Data_profiling:
+
+- SVEVA -
+Data_cleaning:
+- In ubicazione ci sono tipo via, nome, civico e Municipio, si possono usare questi dati per riempire i valori nulli delle colonne e poi droppare ubicazione 
+
+- DEFINITIVE:
