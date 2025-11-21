@@ -10,7 +10,20 @@ STEP, CONSIDERAZIONI E SCELTE:
                 - (Descrizione,civico,codice via, ZD = Ubicazione) non controllata perchè troppi    modi diversi di scrivere in Ubicazione 
 
 
-2) Data_profiling:
+2) Data_profiling
+
+3) Association_Rules:
+- no association rules (personal consideration)
+
+4) Data_wrangling:
+- renominated: 'Camere','Camere piano','Piani totali','Piano piano','Posti letto'
+- fixed indirizzi --> drop 'Ubicazione'
+- sorted by 'Insegna'
+- merging: 'Tipo via' 'nome via' --> 'Via' (drop 'Tipo via' 'nome via')
+- change foat64 with int64 (except for 'Civico')
+
+
+
 
 - SVEVA -
 Data_cleaning:
