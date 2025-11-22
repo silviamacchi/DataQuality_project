@@ -9,7 +9,6 @@ STEP, CONSIDERAZIONI E SCELTE:
                 - Camere <= (minore/uguale) Posti letto tot
                 - (Descrizione,civico,codice via, ZD = Ubicazione) non controllata perchè troppi    modi diversi di scrivere in Ubicazione 
 
-
 2) Data_profiling
 
 3) Association_Rules:
@@ -21,9 +20,17 @@ STEP, CONSIDERAZIONI E SCELTE:
 - sorted by 'Insegna'
 - merging: 'Tipo via' 'nome via' --> 'Via' (drop 'Tipo via' 'nome via')
 - change foat64 with int64 (except for 'Civico')
+- allmaiusc elementi 'Insegna' 'Via' 'Tipo struttura'
 
+5) Missing_value_handling
+- fill 'Piani tot' con somma 'Elenco piani'
 
+6) Outlier_detection:
+- found CODVIA 0000 and set as NaN
+- to be changed the NaN
 
+7) Similarity_measures_and_Duplicate
+- drop duplicates based on..(?)
 
 - SVEVA -
 Data_cleaning:
